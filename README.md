@@ -2,7 +2,7 @@
 
 Tampermonkey(タンパーモンキー)の「入れる・止める・外す」を練習するための、いちばん小さな見本です。
 
-- 動くのは https://example.com だけ。見出しを「Tampermonkey で書き換えました🦭」に変えます
+- 動くのは https://example.com だけ。一番上に緑の札「🦭 Tampermonkey で書き換えました」を出します
 - ほかのサイトでは何もしません。外へは何も送りません
 - 入れ方のページ: https://yubokumin28.github.io/tampermonkey-sample/
 
