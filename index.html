@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tampermonkey の見本｜入れ方</title>
+<meta name="description" content="Tampermonkey の入れる・止める・外すを練習するための、example.com だけで動く小さな見本です。">
+<style>
+  :root { --blue: #2b7de9; --ink: #26303d; --sub: #5d6878; --line: #e3e8ef; --bg: #f6f8fb; --green: #16a34a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", sans-serif; color: var(--ink); background: var(--bg); line-height: 1.8; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  header { background: #fff; border-bottom: 1px solid var(--line); padding: 28px 0 22px; }
+  h1 { font-size: 26px; margin: 0 0 4px; line-height: 1.4; }
+  .lead { margin: 0; color: var(--sub); }
+  section { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; margin: 20px 0; }
+  h2 { font-size: 20px; margin: 0 0 12px; }
+  ol { padding-left: 1.4em; margin: 0; }
+  li { margin: 0 0 10px; }
+  .btn { display: inline-block; background: var(--green); color: #fff; font-weight: 700; font-size: 18px; padding: 14px 28px; border-radius: 12px; text-decoration: none; margin: 6px 0 2px; }
+  .btn:hover { filter: brightness(1.08); }
+  .small { font-size: 13px; color: var(--sub); }
+  code { background: var(--bg); padding: 1px 6px; border-radius: 4px; font-size: 14px; }
+  .note { background: #fff8e6; border: 1px solid #f3d999; border-radius: 10px; padding: 10px 14px; font-size: 14px; }
+  footer { color: var(--sub); font-size: 12px; text-align: center; padding: 20px 0 40px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>🐒 Tampermonkey の見本</h1>
+    <p class="lead">example.com の見出しを書き換えるだけの、いちばん小さなユーザースクリプトです。入れる・止める・外すの練習にどうぞ。</p>
+  </div>
+</header>
+<main class="wrap">
+  <section>
+    <h2>📥 ダウンロード</h2>
+    <p>先に Chrome へ Tampermonkey を入れて、「ユーザー スクリプトを許可する」をオンにしてから押してください。</p>
+    <a class="btn" href="https://raw.githubusercontent.com/yubokumin28/tampermonkey-sample/main/tampermonkey-sample.user.js">Tampermonkey の見本をダウンロード</a>
+    <p class="small">押すと Tampermonkey のインストール画面が開きます。ファイルを保存する作業はありません。</p>
+  </section>
+  <section>
+    <h2>🧭 入れ方</h2>
+    <ol>
+      <li>Chrome ウェブストアで Tampermonkey を追加する<br><a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey(Chrome ウェブストア)</a></li>
+      <li>アドレス欄に <code>chrome://extensions</code> → Tampermonkey の「詳細」→「ユーザー スクリプトを許可する」をオン</li>
+      <li>上の緑のボタンを押す → Tampermonkey の画面で「インストール」</li>
+      <li><a href="https://example.com/">https://example.com/</a> を開く。見出しが「Tampermonkey で書き換えました🦭」になっていれば成功です</li>
+    </ol>
+  </section>
+  <section>
+    <h2>🧹 止め方・外し方</h2>
+    <ol>
+      <li>止める: Chrome の右上の Tampermonkey のアイコン → 見本の緑のスイッチを切る</li>
+      <li>外す: Tampermonkey のアイコン →「ダッシュボード」→ 見本の行のゴミ箱</li>
+    </ol>
+    <p class="note">この見本は example.com でしか動きません。ほかのサイトの表示は変えず、外へ何も送りません。中身は <a href="https://github.com/yubokumin28/tampermonkey-sample">GitHub</a> で誰でも読めます。</p>
+  </section>
+</main>
+<footer>作者: 遊牧民 ／ 2026-10-28</footer>
+</body>
+</html>
